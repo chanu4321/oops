@@ -31,8 +31,20 @@ void Student :: display(){
 
 int main() {
     int a[6]={10,20,30,40,50,60};
-    Student s1(1,"chanu",a);
+    Student s1(1,"chaitanya",a);
     s1.display();
+
+    Student s2(2,"aakash",a);
+    s2.display();
+
+    Student s3(3,"yash",a);
+    s3.display();
+    
+    Student s4(4,"madhav",a);
+    s4.display();
+
+    Student s5(5,"naman",a);
+    s5.display();
 
     return 0;
 }
