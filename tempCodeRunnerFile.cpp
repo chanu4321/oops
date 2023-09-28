@@ -1,50 +1,42 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
-class Student {
-    int rollno;
-    string name;
-    int marks[6];
-    int sum=0;
+
+class student{
+    protected:
+        int roll;
+        string name;
     public:
-    Student (int,string,int m[6]);
-    void display();
-    
+        student();
 };
-Student::Student (int rollno,string name,int marks[6]) {
-        this->rollno=rollno;
-        this->name=name;
-        for (int i=0;i<6;i++) {
-            cout << "enter marks for subject " << i+1 << endl;
-            this->marks[i]=marks[i];
-            sum+=marks[i];
+
+class exam: public student{
+    protected:
+        int science;
+        int math;
+    public:
+        exam();
+};
+
+class result: public exam{
+    protected:
+        int total;
+    public:
+        void display(){
+            cout<<"Enter Student name: \n";
+            cin>>name;
+            cout<<"Enter Roll: \n";
+            cin>>roll;
+            cout<<"Enter Science Marks: \n";
+            cin>>science;
+            cout<<"Enter Math Marks: \n";
+            cin>>math;
+            total=science+math;
+            cout<<name<<endl<<roll<<total;
         }
-    }
-void Student :: display(){
-        cout << "roll no. is " << rollno << endl;
-        cout << "name is " << name << endl;
-        for(int i=0;i<6;i++){
-            cout << "marks for subject " << i+1 << " " << marks[i] << endl;
-        }
+};
 
-    }
-
-
-int main() {
-    int a[6]={10,20,30,40,50,60};
-    Student s1(1,"chaitanya",a);
-    s1.display();
-
-    Student s2(2,"aakash",a);
-    s2.display();
-
-    Student s3(1,"yash",a);
-    s3.display();
-    
-    Student s4(1,"madhav",a);
-    s4.display();
-
-    Student s5(1,"naman",a);
-    s5.display();
-
+int main(){
+    result r1;
+    r1.display();
     return 0;
 }
