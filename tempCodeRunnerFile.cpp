@@ -1,7 +1,20 @@
 #include <iostream>
 using namespace std;
-                   
-int main() {
-     
+void fun () {
+    class test {
+        public:
+        void meth();
+    };
+}
+
+void test :: meth() {
+
+}
+
+int main()
+{
+    fun();
+    cout<<"Hello World";
+
     return 0;
 }
