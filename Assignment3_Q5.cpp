@@ -30,16 +30,13 @@ class Student {
 };
 int main() {
     Student s[10];
-        s[0].setInfo("mudit",10);
-        s[1].setInfo("a",11);
-        s[2].setInfo("b",12);
-        s[3].setInfo("c",13);
-        s[4].setInfo("d",14);
-        s[5].setInfo("e",15,"x");
-        s[6].setInfo("f",16,"y");
-        s[7].setInfo("g",17,"z");
-        s[8].setInfo("h",18,"w");
-        s[9].setInfo("i",19,"u");
+    string n,add;
+    int a;
+    for (int i=0;i<10;i++){
+        cout << "enter name age address" << endl;
+        cin >> n >> a >> add;
+        s[i].setInfo(n,a,add);
+    }
         
     for(int i=0;i<10;i++){
         s[i].getInfo();
