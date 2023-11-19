@@ -62,12 +62,11 @@ int main()
     cout << "Chaitanya Gupta" << endl;
     cout << "A2305222276" << endl; 
     Height c1(5,11);
-    // Height c2(6,0);
-    
-    // Height c3=c1+c2;
-    // c3.print();
-    // Height c4 = c1 < c2;
-    // Height c5 = c1 == c2;
+    Height c2(6,0);
+    Height c3=c1+c2;
+    c3.print();
+    Height c4 = c1 < c2;
+    Height c5 = c1 == c2;
     Height c6 = c1 *= 3;
     c6.print();
     return 0;

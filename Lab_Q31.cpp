@@ -8,7 +8,7 @@ int main()
     cout << "Chaitanya Gupta" << endl;
     cout << "A2305222276" << endl;
     // Open the file in read mode.
-    ifstream infile("filename.txt");
+    ifstream infile("data.txt");
 
     // Check if the file exists.
     if (infile.is_open())

@@ -8,24 +8,24 @@ class A {
     }
 };
 
-// class B  : public A  {
+class B  : public A  {
+    public:
+    B () {
+        cout << "single inheritance class contructor called" << endl;
+    }
+};
+ class C : public A, public B {
+    public:
+    C () {
+        cout << "multiple inheritance class contructor called" << endl;
+    }
+};
+// class D : public B {
 //     public:
-//     B () {
-//         cout << "single inheritance class contructor called" << endl;
+//     D () {
+//         cout << "multilevel inheritance class contructor called" << endl;
 //     }
 // };
-// //  class C : public A, public B {
-// //     public:
-// //     C () {
-// //         cout << "multiple inheritance class contructor called" << endl;
-// //     }
-// // };
-// // class D : public B {
-// //     public:
-// //     D () {
-// //         cout << "multilevel inheritance class contructor called" << endl;
-// //     }
-// // };
 // class E : public A {
 //     public:
 //     E () {
@@ -38,8 +38,8 @@ int main() {
     cout << "A2305222276" << endl;
 
     //B::A a1;
-    //C::A a1;
-    //D::A a1;
-    //E::A a1;
+    C::A a1;
+    // D::A a1;
+    // E::A a1;
     return 0;
 }
