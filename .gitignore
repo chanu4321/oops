@@ -1,4 +1,25 @@
+# Compiled binaries and build output
 *.exe
-*.vscode
-*tempCodeRunnerFile.cpp
+*.out
+a.out
+*.o
+*.obj
+*.pdb
+*.ilk
+
+# VS Code Code Runner scratch files
+tempCodeRunnerFile.*
+
+# Editor / IDE settings (machine-specific)
+.vscode/
+.idea/
+.zed/
+
+# OS clutter
+Thumbs.db
+desktop.ini
+.DS_Store
+*.lnk
+
+# Runtime input/output files written by the file-handling programs
 *.txt
